@@ -1,0 +1,22 @@
+{
+  "About": [
+    {
+      "type": "title",
+      "content": "About us"
+    },
+    {
+      "type": "paragraph",
+      "content": "    The smart health monitor is bla bla bla replace here"
+    }
+  ],
+  "Testimonies": [
+    {
+      "type": "title",
+      "content": "Testimonies"
+    },
+    {
+      "type": "paragraph",
+      "content": "Hello this is very good indeed\n   ~ John Doe"
+    }
+  ]
+}

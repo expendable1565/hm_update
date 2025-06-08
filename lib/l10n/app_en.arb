@@ -1,0 +1,78 @@
+{
+    "@@locale": "en",
+    "diagnose": "Diagnose",
+    "@diagnose": {
+        "description": "Diagnose text on home menu"
+    },
+    "storage": "Storage",
+    "@storage": {
+        "description": "Storage text on home menu"
+    },
+    "bmiCalculator": "BMI Calculator",
+    "@bmiCalculator": {
+        "description": "BMI Calculator title"
+    },
+    "healthyLiving": "Healthy Living",
+    "@healthyLiving": {
+        "description": "Healthy living title"
+    },
+    "chooseBody": "Choose Body Part",
+    "@chooseBody": {
+        "description": "Choose a body part to diagnose"
+    },
+    "frontLungs": "Lungs (front)",
+    "@frontLungs": {
+        "description": "Diagnoses anterior lungs"
+    },
+    "backLungs": "Lungs (back)",
+    "@backLungs": {
+        "description": "Diagnoses posterior lungs"
+    },
+    "heartRate": "Heart",
+    "@heartRate": {
+        "description": "Heart Rate"
+    },
+    "tapPlacement": "Tap a Placement to Record",
+    "@tapPlacement": {
+        "description": "Tap a Placement to Record"
+    },
+    "recordPlacement": "Recording placement",
+    "@recordPlacement": {
+        "description": "Records a placement on image"
+    },
+    "inputWeight": "Input your weight",
+    "@inputWeight": {
+        "description": "Weight input"
+    },
+    "inputHeight": "Input your height",
+    "@inputHeight": {
+        "description": "Height input"
+    },
+    "yourBMI": "Your BMI Is",
+    "@yourBMI": {
+        "description": "Describles BMI"
+    },
+    "healthy": "Healthy",
+    "@healthy": {
+        "description": "Healthy!"
+    },
+    "overweight": "Overweight",
+    "@overweight": {
+        "description": "Too fat"
+    },
+    "underweight": "Underweight",
+    "@underweight": {
+        "description": "Too skinny"
+    },
+    "heartbeatInstruction": "Place your finger on the camera until the view turns dark-red",
+    "@heartbeatInstruction": {
+        "description": "Instructions for operating the heartbeat detector"
+    },
+    "yourBpmIs": "Your BPM is",
+    "@yourBpmIs": {
+        "description": "Your BPM is"
+    },
+    "about": "About",
+    "feedback": "Feedback",
+    "chatbot": "Chatbot"
+}
