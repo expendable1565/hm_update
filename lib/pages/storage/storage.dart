@@ -19,6 +19,7 @@ class StorageContainer extends StatefulWidget {
 
 class _StorageContainer extends State<StorageContainer> {
   var files = ["Loading..."];
+  var initialized = false;
 
   Future<String> getDownloadPath() async {
     var perms = await Permission.storage.status;
@@ -47,7 +48,10 @@ class _StorageContainer extends State<StorageContainer> {
 
   @override
   Widget build(BuildContext context) {
-    updateFiles();
+    if (!initialized) {
+      initialized = true;
+      updateFiles();
+    }
 
     var nameMappings = {
       "FrontLungs": AppLocalizations.of(context)!.frontLungs,

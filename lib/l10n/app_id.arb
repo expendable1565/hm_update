@@ -20,5 +20,8 @@
     "yourBpmIs": "BPM jantung anda",
     "about": "Tentang",
     "feedback": "Feedback",
-    "chatbot": "Chatbot"
+    "chatbot": "Chatbot",
+    "mealMenu": "Menu Makan",
+    "workoutSchedule": "Jadwal Olah Raga",
+    "day": "Hari"
 }

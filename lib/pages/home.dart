@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smart_health_monitor/components/buttons.dart';
 import 'package:smart_health_monitor/l10n/app_localizations.dart';
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key, this.title = "lmao"});
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
 
+  @override
+  State<StatefulWidget> createState() {
+    return _MyHomePage();
+  }
+}
+
+class _MyHomePage extends State<MyHomePage> {
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
   // how it looks.
@@ -15,7 +23,33 @@ class MyHomePage extends StatelessWidget {
   // used by the build method of the State. Fields in a Widget subclass are
   // always marked "final".
 
-  final String title;
+  String? username;
+  String? email;
+
+  Future<void> getUserData() async {
+    var prefs = await SharedPreferences.getInstance();
+
+    username = prefs.getString("name");
+    email = prefs.getString("email");
+  }
+
+  Future<void> logout() async {
+    var prefs = await SharedPreferences.getInstance();
+
+    await prefs.remove("name");
+    await prefs.remove("email");
+
+    setState(() {
+      username = null;
+      email = null;
+    });
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,12 +68,27 @@ class MyHomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
-                width: double.infinity,
-                child: DrawerHeader(
-                  decoration: BoxDecoration(color: Colors.teal),
-                  child: Image(image: AssetImage("assets/indonesia.jpg")),
-                ),
+              FutureBuilder(
+                future: getUserData(),
+                builder: (context, snapshot) {
+                  if (username != null && email != null) {
+                    return UserAccountsDrawerHeader(
+                      accountEmail: Text(email!),
+                      accountName: Text(username!),
+                      currentAccountPicture: Image(
+                        image: AssetImage("assets/profile_blank.png"),
+                      ),
+                    );
+                  } else {
+                    return SizedBox(
+                      width: double.infinity,
+                      child: DrawerHeader(
+                        decoration: BoxDecoration(color: Colors.teal),
+                        child: Image(image: AssetImage("assets/indonesia.jpg")),
+                      ),
+                    );
+                  }
+                },
               ),
               ListTile(
                 leading: Icon(Icons.info),
@@ -54,11 +103,28 @@ class MyHomePage extends StatelessWidget {
                 leading: Icon(Icons.group),
                 title: Text("Testimonies"),
                 onTap: () {
-                  Navigator.of(context).pushNamed("/about", arguments: "Testimonies");
+                  Navigator.of(
+                    context,
+                  ).pushNamed("/about", arguments: "Testimonies");
                 },
               ),
               Spacer(),
-              ListTile(leading: Icon(Icons.login), title: Text("Login")),
+              ListTile(
+                leading: Icon(Icons.login),
+                title: Text(username == null ? "Login" : "Logout"),
+                onTap: () {
+                  if (username == null) {
+                    Navigator.of(context)
+                        .pushNamed("/login")
+                        .then(
+                          (data) =>
+                              getUserData().then((data) => setState(() {})),
+                        );
+                  } else {
+                    logout();
+                  }
+                },
+              ),
             ],
           ),
         ),
@@ -91,7 +157,7 @@ class MyHomePage extends StatelessWidget {
           DecoratedImageButton(
             text: AppLocalizations.of(context)!.healthyLiving,
             icon: "assets/health_diet.png",
-            onPressed: () => print("Diagnose"),
+            onPressed: () => Navigator.pushNamed(context, "/lifestyle"),
             color: Colors.green,
           ),
           Text("Using language : ${Localizations.localeOf(context)}"),

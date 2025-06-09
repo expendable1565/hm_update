@@ -1,0 +1,82 @@
+[
+  {
+    "day": "Monday",
+    "description": "Chest, Shoulder, and Tricep",
+    "image": "mon.jpg",
+    "workouts": [
+      "jj.jpg",
+      "pu.jpg",
+      "ipu.jpg",
+      "dpu.jpg",
+      "dipu.jpg",
+      "apu.jpg",
+      "dips.jpg"
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "description": "Back and Bicep",
+    "image": "tues.jpg",
+    "workouts": [
+      "jj.jpg",
+      "pu.jpg",
+      "cgpu.jpg",
+      "cup.jpg",
+      "apu.jpg",
+      "amepulup.jpg"
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "description": "Legs and Abs",
+    "image": "wed.jpg",
+    "workouts": [
+      "jj.jpg",
+      "s.jpg",
+      "l.jpg",
+      "ss.jpg",
+      "sup.jpg",
+      "lrais.jpg",
+      "rutwis.jpg"
+    ]
+  },
+  {
+    "day": "Thursday",
+    "description": "Rest",
+    "image": "thurs.jpg",
+    "workouts": []
+  },
+  {
+    "day": "Friday",
+    "description": "Chest, Shoulder, and Tricep",
+    "image": "fri.jpg",
+    "workouts": [
+      "jj.jpg",
+      "pu.jpg",
+      "ipu.jpg",
+      "dpu.jpg",
+      "dipu.jpg",
+      "apu.jpg",
+      "dips.jpg"
+    ]
+  },
+  {
+    "day": "Saturday",
+    "description": "Back and Bicep",
+    "image": "satur.jpg",
+    "workouts": [
+      "jj.jpg",
+      "pu.jpg",
+      "cgpu.jpg",
+      "cup.jpg",
+      "apu.jpg",
+      "amepulup.jpg"
+    ]
+  },
+  {
+    "day": "Sunday",
+    "description": "Rest",
+    "image": "sun.jpg",
+    "workouts": []
+  }
+]

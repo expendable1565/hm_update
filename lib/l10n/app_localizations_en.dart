@@ -71,4 +71,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get chatbot => 'Chatbot';
+
+  @override
+  String get mealMenu => 'Meal Menu';
+
+  @override
+  String get workoutSchedule => 'Workout Schedule';
+
+  @override
+  String get day => 'Day';
 }

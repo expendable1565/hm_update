@@ -43,6 +43,9 @@ dependencies:
   path_provider: ^2.1.5
   audioplayers: ^6.4.0
   camera: ^0.11.1
+  flutter_form_builder: ^10.0.1
+  shared_preferences: ^2.5.3
+  form_builder_validators: ^11.1.2
 
 dev_dependencies:
   flutter_test:
@@ -68,7 +71,10 @@ flutter:
 
   assets: 
    - assets/
-   - assets/json/sidebar_en.json
+   - assets/json/
+   - assets/meal/
+   - assets/workout/
+   - assets/workout/moves/
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

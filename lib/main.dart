@@ -4,9 +4,16 @@ import 'package:smart_health_monitor/pages/bmi/bmiCalculator.dart';
 import 'package:smart_health_monitor/pages/diagnose/choose.dart';
 import 'package:smart_health_monitor/pages/diagnose/heart.dart';
 import 'package:smart_health_monitor/pages/diagnose/lung.dart';
+import 'package:smart_health_monitor/pages/diagnose/result.dart';
 import 'package:smart_health_monitor/pages/home.dart';
 import 'package:smart_health_monitor/l10n/app_localizations.dart';
+import 'package:smart_health_monitor/pages/lifestyle/choose.dart';
+import 'package:smart_health_monitor/pages/lifestyle/meal/choose.dart';
+import 'package:smart_health_monitor/pages/lifestyle/meal/display.dart';
+import 'package:smart_health_monitor/pages/lifestyle/workout/choose.dart';
+import 'package:smart_health_monitor/pages/lifestyle/workout/display.dart';
 import 'package:smart_health_monitor/pages/sidebar/About.dart';
+import 'package:smart_health_monitor/pages/sidebar/Login.dart';
 import 'package:smart_health_monitor/pages/storage/audioPlayer.dart';
 import 'package:smart_health_monitor/pages/storage/storage.dart';
 
@@ -72,10 +79,17 @@ class MyApp extends StatelessWidget {
         '/diagnose': (context) => DiagnoseChoose(),
         '/diagnose/lung': (context) => DiagnoseLung(),
         '/diagnose/heart': (context) => DiagnoseHeart(),
+        '/diagnose/results': (context) => ResultPage(),
         '/storage': (context) => StorageContainer(),
         '/storage/player': (context) => AudioPlayerPage(),
         '/bmi': (context) => BMICalculator(),
         '/about': (context) => AboutPage(),
+        '/lifestyle': (context) => ChooseLifestyle(),
+        '/lifestyle/meal': (context) => ChooseMeal(),
+        '/lifestyle/meal/display': (context) => MealDisplay(),
+        '/lifestyle/workout': (context) => ChooseWorkout(),
+        '/lifestyle/workout/display': (context) => WorkoutDisplay(),
+        '/login': (context) => Login()
       },
     );
   }

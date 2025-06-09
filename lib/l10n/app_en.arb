@@ -74,5 +74,8 @@
     },
     "about": "About",
     "feedback": "Feedback",
-    "chatbot": "Chatbot"
+    "chatbot": "Chatbot",
+    "mealMenu": "Meal Menu",
+    "workoutSchedule": "Workout Schedule",
+    "day": "Day"
 }

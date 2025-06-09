@@ -223,6 +223,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Chatbot'**
   String get chatbot;
+
+  /// No description provided for @mealMenu.
+  ///
+  /// In en, this message translates to:
+  /// **'Meal Menu'**
+  String get mealMenu;
+
+  /// No description provided for @workoutSchedule.
+  ///
+  /// In en, this message translates to:
+  /// **'Workout Schedule'**
+  String get workoutSchedule;
+
+  /// No description provided for @day.
+  ///
+  /// In en, this message translates to:
+  /// **'Day'**
+  String get day;
 }
 
 class _AppLocalizationsDelegate

@@ -5,6 +5,7 @@ class DecoratedImageButton extends StatelessWidget {
   final String icon;
   final VoidCallback onPressed;
   final MaterialColor color;
+  final bool colorImage;
 
   const DecoratedImageButton({
     super.key,
@@ -12,6 +13,7 @@ class DecoratedImageButton extends StatelessWidget {
     required this.icon,
     required this.onPressed,
     this.color = Colors.blue,
+    this.colorImage = true
   });
 
   @override
@@ -27,7 +29,7 @@ class DecoratedImageButton extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image(image: AssetImage(icon), height: 45, color: color),
+              Image(image: AssetImage(icon), height: 45, color: colorImage ? color : null),
               SizedBox(width: 15, height: 0),
               Text(text, style: TextStyle(fontSize: 30, color: color[800])),
             ],

@@ -71,4 +71,13 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get chatbot => 'Chatbot';
+
+  @override
+  String get mealMenu => 'Menu Makan';
+
+  @override
+  String get workoutSchedule => 'Jadwal Olah Raga';
+
+  @override
+  String get day => 'Hari';
 }
