@@ -1,6 +1,10 @@
 {
     "@@locale": "en",
     "diagnose": "Diagnose",
+    "appName": "Digital Monitoring Stethoscope",
+    "@appName": {
+        "description": "Name of application"
+    },
     "@diagnose": {
         "description": "Diagnose text on home menu"
     },

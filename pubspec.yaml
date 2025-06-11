@@ -46,10 +46,13 @@ dependencies:
   flutter_form_builder: ^10.0.1
   shared_preferences: ^2.5.3
   form_builder_validators: ^11.1.2
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  
+  flutter_launcher_icons: ^0.14.4
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -60,6 +63,11 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+
+flutter_icons:
+  image_path: "assets/app_en.jpg" 
+  android: true
+  ios: true
 
 # The following section is specific to Flutter packages.
 flutter:

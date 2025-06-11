@@ -3,6 +3,7 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smart_health_monitor/components/buttons.dart';
 import 'package:smart_health_monitor/l10n/app_localizations.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -53,11 +54,13 @@ class _MyHomePage extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final localizations = AppLocalizations.of(context)!;
+    final imgStr = localizations.localeName == "id" ? "assets/app_id.jpg" : "assets/app_en.jpg";
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Smart Health Monitor",
-          style: TextStyle(color: Colors.white),
+        title: Text(
+          localizations.appName,
+          style: const TextStyle(color: Colors.white),
         ),
       ),
       backgroundColor: Colors.white,
@@ -97,8 +100,8 @@ class _MyHomePage extends State<MyHomePage> {
                   Navigator.of(context).pushNamed("/about", arguments: "About");
                 },
               ),
-              ListTile(leading: Icon(Icons.feedback), title: Text("Feedback")),
-              ListTile(leading: Icon(Icons.chat), title: Text("Chatbot")),
+              ListTile(leading: Icon(Icons.feedback), title: Text("Feedback"), onTap: () => launchUrl(Uri.parse("https://wa.me/6287849441752")),),
+              ListTile(leading: Icon(Icons.chat), title: Text("Chatbot"), onTap: () => launchUrl(Uri.parse("https://wa.me/628983138381?text=.ai hi")),),
               ListTile(
                 leading: Icon(Icons.group),
                 title: Text("Testimonies"),
@@ -134,7 +137,7 @@ class _MyHomePage extends State<MyHomePage> {
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 64),
-            child: Image(image: AssetImage("assets/appicon.jpg")),
+            child: Image(image: AssetImage(imgStr)),
           ),
           DecoratedImageButton(
             text: AppLocalizations.of(context)!.diagnose,

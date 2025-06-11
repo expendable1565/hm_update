@@ -1,5 +1,6 @@
 {
     "@@locale": "id",
+    "appName": "Smart Health Monitor",
     "diagnose": "Periksa",
     "storage": "Penyimpanan",
     "bmiCalculator": "Kalkulator BMI",

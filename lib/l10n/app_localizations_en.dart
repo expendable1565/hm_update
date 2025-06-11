@@ -12,6 +12,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get diagnose => 'Diagnose';
 
   @override
+  String get appName => 'Digital Monitoring Stethoscope';
+
+  @override
   String get storage => 'Storage';
 
   @override

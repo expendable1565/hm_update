@@ -12,6 +12,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get diagnose => 'Periksa';
 
   @override
+  String get appName => 'Smart Health Monitor';
+
+  @override
   String get storage => 'Penyimpanan';
 
   @override

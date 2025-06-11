@@ -104,6 +104,12 @@ abstract class AppLocalizations {
   /// **'Diagnose'**
   String get diagnose;
 
+  /// Name of application
+  ///
+  /// In en, this message translates to:
+  /// **'Digital Monitoring Stethoscope'**
+  String get appName;
+
   /// Storage text on home menu
   ///
   /// In en, this message translates to:
