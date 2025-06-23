@@ -83,4 +83,19 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get day => 'Hari';
+
+  @override
+  String get storageTap => 'Ketuk file untuk melihat';
+
+  @override
+  String get name => 'Nama lengkap';
+
+  @override
+  String get youFine => 'Anda sehat';
+
+  @override
+  String get noDisease => 'Tidak ada penyakit';
+
+  @override
+  String get audioMatching => 'Analisis audio :';
 }

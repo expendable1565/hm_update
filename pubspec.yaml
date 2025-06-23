@@ -80,7 +80,8 @@ flutter:
   assets: 
    - assets/
    - assets/json/
-   - assets/meal/
+   - assets/meal/en/
+   - assets/meal/id/
    - assets/workout/
    - assets/workout/moves/
   # To add assets to your application, add an assets section, like this:

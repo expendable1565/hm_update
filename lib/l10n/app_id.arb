@@ -19,10 +19,15 @@
     "underweight": "Kurang",
     "heartbeatInstruction": "Letakkan jari anda pada lensa kamera hingga gambar terlihat merah kegelapan",
     "yourBpmIs": "BPM jantung anda",
+    "storageTap": "Ketuk file untuk melihat",
     "about": "Tentang",
     "feedback": "Feedback",
     "chatbot": "Chatbot",
     "mealMenu": "Menu Makan",
     "workoutSchedule": "Jadwal Olah Raga",
-    "day": "Hari"
+    "day": "Hari",
+    "name": "Nama lengkap",
+    "youFine": "Anda sehat",
+    "noDisease": "Tidak ada penyakit",
+    "audioMatching": "Analisis audio :"
 }

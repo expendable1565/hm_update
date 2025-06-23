@@ -102,6 +102,7 @@ class _MyHomePage extends State<MyHomePage> {
               ),
               ListTile(leading: Icon(Icons.feedback), title: Text("Feedback"), onTap: () => launchUrl(Uri.parse("https://wa.me/6287849441752")),),
               ListTile(leading: Icon(Icons.chat), title: Text("Chatbot"), onTap: () => launchUrl(Uri.parse("https://wa.me/628983138381?text=.ai hi")),),
+              ListTile(leading: Icon(Icons.chat), title: Text("Testimony"), onTap: () => launchUrl(Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLScdjAym_e3npMhzTPckAmTLqWsRQWXT9_nkI2aoJFm_CEITgg/viewform")),),
               ListTile(
                 leading: Icon(Icons.group),
                 title: Text("Testimonies"),

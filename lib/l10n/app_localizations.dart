@@ -247,6 +247,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Day'**
   String get day;
+
+  /// No description provided for @storageTap.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap on a file to view'**
+  String get storageTap;
+
+  /// No description provided for @name.
+  ///
+  /// In en, this message translates to:
+  /// **'Full Name'**
+  String get name;
+
+  /// No description provided for @youFine.
+  ///
+  /// In en, this message translates to:
+  /// **'You are fine'**
+  String get youFine;
+
+  /// No description provided for @noDisease.
+  ///
+  /// In en, this message translates to:
+  /// **'No disease detected'**
+  String get noDisease;
+
+  /// No description provided for @audioMatching.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio analysis result :'**
+  String get audioMatching;
 }
 
 class _AppLocalizationsDelegate

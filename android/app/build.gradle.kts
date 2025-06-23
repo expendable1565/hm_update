@@ -39,6 +39,33 @@ android {
         versionName = flutter.versionName
     }
 
+    flavorDimensions += "default"
+    productFlavors {
+        create("ID") {
+            dimension = "default"
+            resValue(
+                type = "string",
+                name = "app_name",
+                value = "Smart Health Monitor")
+            resValue(
+                type = "string",
+                name = "force_language",
+                value = "id")
+            applicationIdSuffix = ".id"
+        }
+        create("EN") {
+            dimension = "default"
+            resValue(
+                type = "string",
+                name = "app_name",
+                value = "Digital Monitoring Stethoscope")
+            resValue(
+                type = "string",
+                name = "force_language",
+                value = "en")
+            applicationIdSuffix = ".en"
+        }
+    }
     
 
     buildTypes {

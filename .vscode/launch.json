@@ -1,0 +1,43 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+
+
+
+    {
+      "name": "smart_health_monitor (ID)",
+      "request": "launch",
+      "type": "dart",
+      "toolArgs": [
+        "--flavor",
+        "ID",
+        "--dart-define=LANG=id",
+      ]
+    },
+    {
+      "name": "smart_health_monitor (EN)",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor",
+        "EN",
+        "--dart-define=LANG=en"
+      ]
+    },
+    {
+      "name": "smart_health_monitor (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "smart_health_monitor (release mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ]
+}

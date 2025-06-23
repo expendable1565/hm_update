@@ -81,5 +81,10 @@
     "chatbot": "Chatbot",
     "mealMenu": "Meal Menu",
     "workoutSchedule": "Workout Schedule",
-    "day": "Day"
+    "day": "Day",
+    "storageTap": "Tap on a file to view",
+    "name": "Full Name",
+    "youFine": "You are fine",
+    "noDisease": "No disease detected",
+    "audioMatching": "Audio analysis result :"
 }

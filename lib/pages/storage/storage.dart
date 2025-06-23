@@ -58,6 +58,8 @@ class _StorageContainer extends State<StorageContainer> {
       "BackLungs": AppLocalizations.of(context)!.backLungs,
     };
 
+    var localizations = AppLocalizations.of(context)!;
+
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(title: Text(AppLocalizations.of(context)!.storage)),
@@ -68,7 +70,10 @@ class _StorageContainer extends State<StorageContainer> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: files
+            children: [ 
+              Text(localizations.storage),
+              Text(localizations.storageTap),
+              ...files
                 .map((str) {
                   var decodedString = FileParser.toDisplayString(
                     FileParser.decode(str),
@@ -103,7 +108,8 @@ class _StorageContainer extends State<StorageContainer> {
                     ),
                   );
                 })
-                .toList(),
+                .toList()
+              ],
           ),
         ),
       ),

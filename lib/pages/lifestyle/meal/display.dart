@@ -13,6 +13,8 @@ class _MealDisplay extends State<MealDisplay> {
   Widget build(BuildContext context) {
     var args = ModalRoute.of(context)!.settings.arguments as String;
     var localizations = AppLocalizations.of(context)!;
+    var lang = localizations.localeName == "id" ? "id" : "en";
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(title: Text(localizations.mealMenu)),
@@ -25,9 +27,10 @@ class _MealDisplay extends State<MealDisplay> {
                 "${localizations.day} $args",
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
               ),
-              Image(image: AssetImage("assets/meal/d${args}bf.jpg")),
-              Image(image: AssetImage("assets/meal/d${args}ln.jpg")),
-              Image(image: AssetImage("assets/meal/d${args}dn.jpg")),
+              Image(image: AssetImage("assets/meal/$lang/d${args}bf.jpg")),
+              Image(image: AssetImage("assets/meal/$lang/d${args}ln.jpg")),
+              Image(image: AssetImage("assets/meal/$lang/d${args}dn.jpg")),
+              Image(image: AssetImage("assets/meal/$lang/d${args}sn.jpg")),
             ],
           ),
         ),

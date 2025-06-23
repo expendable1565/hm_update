@@ -128,7 +128,7 @@ class _AudioPlayer extends State<AudioPlayerPage> {
                 ),
               ),
               SizedBox(height: 24),
-              ElevatedButton(child: Text("Go to results"), onPressed: () => Navigator.of(context).pushNamed("/diagnose/results"),)
+              ElevatedButton(child: Text("Go to results"), onPressed: () => Navigator.of(context).pushNamed("/diagnose/results", arguments: filePath),)
             ],
           ),
         ),

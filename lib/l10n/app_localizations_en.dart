@@ -83,4 +83,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get day => 'Day';
+
+  @override
+  String get storageTap => 'Tap on a file to view';
+
+  @override
+  String get name => 'Full Name';
+
+  @override
+  String get youFine => 'You are fine';
+
+  @override
+  String get noDisease => 'No disease detected';
+
+  @override
+  String get audioMatching => 'Audio analysis result :';
 }
